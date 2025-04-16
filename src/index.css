@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+:root {
+  --clr-black: #18171F;
+  --clr-dark-grey: #24232C;
+  --clr-light-grey: #817D92;
+  --clr-white: #E6E5EA;
+  --clr-teal: #A4FFAF;
+  --clr-red: #F64A4A;
+  --clr-orange: #FB7C58;
+  --clr-yellow: #F8CD65;
+  --font-family: 'JetBrains Mono', Arial, sans-serif;
+  --font-body-sm: bold 16px var(--font-family);
+  --font-body-md: bold 18px/23px var(--font-family);
+  --font-head-md: bold 24px/31px var(--font-family);
+  --font-head-lg: bold 32px/43px var(--font-family);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: var(--font-body-sm);
+  color: var(--clr-white);
+  background-color: #08070B;
+}
+
+@media screen and (min-width: 481px) {
+  html {
+    font: var(--font-body-md);
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding-inline: 16px;
+}
+
+button,
+label,
+input {
+  font-family: inherit;
+  cursor: pointer;
+}

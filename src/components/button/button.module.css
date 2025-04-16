@@ -1,0 +1,23 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 56px;
+    width: 100%;
+    color: var(--clr-black);
+    font-weight: bold;
+    background-color: var(--clr-teal);
+    border: none;
+    border-radius: 0;
+}
+
+.button:is(:hover, :focus) {
+    color: var(--clr-teal);
+    background-color: transparent;
+    border: 2px solid var(--clr-teal);
+}
+
+.button:is(:hover, :focus) path {
+    fill: var(--clr-teal);
+}

@@ -1,0 +1,73 @@
+section {
+  width: 140%;
+
+}
+body{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.password {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 16px;
+  width: 100%;
+  background-color: var(--clr-dark-grey);
+}
+
+.password span {
+  font: var(--font-head-md);
+}
+
+@media screen and (min-width: 481px) {
+  .password {
+    padding-inline: 32px;
+    padding-block: 19px;
+  }
+
+  .password span {
+    font: var(--font-head-lg);
+  }
+}
+
+h1 {
+  font: var(--font-body-sm);
+  color: var(--clr-light-grey);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.copy {
+  position: relative;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  border: none;
+  background-color: transparent;
+}
+
+.copy:is(:hover, :focus) path {
+  fill: var(--clr-white);
+}
+
+.copy > span {
+  position: absolute;
+  top: 50%;
+  right: 37px;
+  transform: translateY(-50%);
+  padding-left: 16px;
+  color: var(--clr-teal);
+  font: var(--font-body-sm);
+  background: linear-gradient(to left, var(--clr-dark-grey) 85%, transparent);
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 481px) {
+  .copy > span {
+    font: var(--font-body-md);
+  }
+}
