@@ -1,4 +1,4 @@
-import { lowerCaseChars, numberChars, symbolChars, upperCaseChars } from "../util/characters"
+import { lowerCaseChars, numberChars, symbolChars, upperCaseChars } from "../rvas/characters"
 
 export const generateCharSet = (options: Options) => {
     let charSet: string[] = []
